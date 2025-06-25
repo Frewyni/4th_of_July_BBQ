@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>4th of July Backyard BBQ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+</head>
+<body>
+  <h1 class="title">🎆 4th of July Backyard BBQ 🎇</h1>
+
+  <div class="scene">
+    <div class="sky">
+      <div class="moon"></div>
+      <div class="stars"></div>
+      <div class="firework firework1"></div>
+      <div class="firework firework2"></div>
+    </div>
+
+    <div class="ground">
+      <div class="flag hvr-grow" id="play-anthem"></div>
+      <div class="grill">
+        <div class="smoke"></div>
+      </div>
+      <div class="family"></div>
+      <div class="tree"></div>
+    </div>
+  </div>
+
+  <audio id="anthem" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+
+  <script>
+    document.getElementById("play-anthem").onclick = function() {
+      document.getElementById("anthem").play();
+    };
+  </script>
+</body>
+</html>
