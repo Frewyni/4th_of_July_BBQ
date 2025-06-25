@@ -161,6 +161,98 @@ body {
   }
 }
 
+/* Parade Float */
+.parade-float {
+  width: 100px;
+  height: 60px;
+  background: linear-gradient(to right, red, white, blue);
+  border: 2px solid white;
+  position: absolute;
+  bottom: 20px;
+  left: 160px;
+  border-radius: 10px;
+}
+
+/* Marching Band */
+.marching-band {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 160px;
+}
+
+.drummer, .flag-twirler {
+  width: 30px;
+  height: 50px;
+  background: navy;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+/* Sparkler */
+.sparkler {
+  width: 15px;
+  height: 50px;
+  background: gold;
+  position: absolute;
+  bottom: 20px;
+  left: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px yellow;
+}
+
+/* Truck */
+.truck {
+  width: 100px;
+  height: 50px;
+  background: darkblue;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.truck-flag {
+  width: 20px;
+  height: 30px;
+  background: linear-gradient(to right, red 33%, white 33% 66%, blue 66%);
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  border: 1px solid white;
+}
+
+/* Plane + Banner */
+.plane {
+  width: 60px;
+  height: 20px;
+  background: silver;
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  border-radius: 10px;
+  animation: flyby 8s linear infinite;
+}
+
+.banner {
+  position: absolute;
+  left: 60px;
+  top: 2px;
+  background: white;
+  color: red;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-left: 5px solid red;
+}
+
+@keyframes flyby {
+  0%   { left: -100px; top: 40px; }
+  100% { left: 110%; top: 60px; }
+}
+
 @keyframes smokeUp {
   0% {
     transform: translateY(0);
