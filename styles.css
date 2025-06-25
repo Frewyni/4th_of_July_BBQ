@@ -9,8 +9,11 @@ body {
 }
 
 .title {
-  margin-top: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px red;
 }
 
 /* Scene Layout */
@@ -56,15 +59,26 @@ body {
 
 /* Flag */
 .flag {
-  width: 60px;
+  width: 70px;
   height: 40px;
-  background: linear-gradient(to right, red 33%, white 33% 66%, blue 66%);
+  background:
+    repeating-linear-gradient(to bottom, red, red 4px, white 4px, white 8px);
   border: 2px solid white;
   position: absolute;
   top: 20px;
   left: 20px;
   animation: wave 2s infinite ease-in-out;
   cursor: pointer;
+}
+
+.flag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 20px;
+  background: blue;
 }
 
 /* Grill */
